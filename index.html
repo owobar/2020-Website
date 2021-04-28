@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="website-title">
+            <div class="title">繫結之間</div>
+            <div class="subtitle">我們在這段時間內可能會短暫地關閉我們的網站，因為我們目前正在舉辦線上展覽，在這段時間內你可以看看我們的社群媒體。期待我們在策展完後再次地榮種相見！</div>
+        </div>
+        <div class="post">
+            <a class="title" href="#">關於我的個人頁面</a>
+            <div class="desc">由我親手設計的個人簡介網站首頁。</div>
+            <div class="bg">
+                <img class="top" src="https://i.pinimg.com/originals/58/fe/e7/58fee70fbdf629abe2cea8be69a11465.jpg" alt="">
+            </div>
+        </div>
+        <div class="post">
+
+            <a class="title" href="#">Twitter @HRSCU20</a>
+            <div class="desc">視覺設計實驗室的共同參與人，目前是網頁視覺設計開發者，也是一位學生。總而言之就是玩多媒體。</div>
+            <div class="bg"><img src="https://pbs.twimg.com/profile_images/1384404771491127302/eJhwiLQt.jpg" alt=""></div>
+        </div>
+        <div class="post">
+            <a class="title" href="https://baramangaonline.com/jpn-kazuhide-ichikawa-%e5%b8%82%e5%b7%9d%e5%92%8c%e7%a7%80-%e3%81%97%e3%82%87%e3%83%bc%e3%82%82%e3%81%aa%e3%81%84%e3%81%8a%e3%81%a3%e3%81%a1%e3%82%83%e3%82%93-%e6%9d%bf%e9%87%91%e5%b7%a5/?__cf_chl_jschl_tk__=1be6b955eb4655263b09b9d4df7f71cf9211fb6d-1619180314-0-ASk_XqN0YXW-n0si9ZMmqJ6MAozBCJYwvadNNLDFlC4c9fFg7SZSOBF_t1tmuBzDNMu2HnBKWGRRMhWGno-dI5zuYTH3_UZQDqPWeLwGpJ-kAc4NSHbuMJYHvn9G1tASp44znuK6jGV8QnLr5LD8TPfiP7e6TsBVlRX_90aXZiq7gfZZYH6qWcTxDfLTh8SWEct0OP86thI7ZN8uu-ZCfLE4uhPvZ54urrSfGRmNlx6iH_w-Hjz8Xcnm1klu6FBiN5_gxIFHmrDBqo8wpBAJEZ1t9LGoAnC-k2rU0fm5yQo7DiphxVIXPCWzp4xOksEhn3CwjVmpIQAFfD6tTJTsriPjcNaxsfclLNN2CyW3aCpl9QSg_eHAfIemm373qbIhWGZzJz4Vfll_r5D3-LFEMVGZZ5Nselg2IQ84f0L-QzY8S5zCcnLzsKTTjanRiakSpJW3AIbguLkjMKTQ2g-FK0-DPcN-kmcc3LCJPdnRWzx8eUNyXk81xkZnPfwjQLhUWYhODHM2diZ950ouJiMAGB0MxzD9bIKDhf5vTXOMrAmBxCSEsOb7laNSPrkP5vO2gfc3kETuFEGdxN3Tit9cxd4LM-oGr3pOGd7e8GnXMJFcfWIfzUk6oUVq-WURuuI77iBi1WBgFSx6GCXzY-yjtIw0Fk7m3j5Gw9Uax-NTsVZy0G_ba51jLYSPTuH-nnkfyg">市川和秀-しょーもないおっちゃん-板金工</a>
+            <div class="desc">西動華委升種收境聞年一下畫聲財然你一數樣調，主古兒那去上文，中加學也加子，標解如的收很醫沒竟得友好巴沒減我非裝血軍上大入資包會事會員我文且，了裝遠孩不</div>
+            <div class="bg"><img src="https://baramangaonline.com/wp-content/uploads/2016/05/Kazuhide-Ichikawa-%E5%B8%82%E5%B7%9D%E5%92%8C%E7%A7%80-%E3%81%97%E3%82%87%E3%83%BC%E3%82%82%E3%81%AA%E3%81%84%E3%81%8A%E3%81%A3%E3%81%A1%E3%82%83%E3%82%93-%E6%9D%BF%E9%87%91%E5%B7%A5%E3%83%BB%E5%B2%A9%E7%94%B0%E6%B5%A9%E4%BA%8C%E9%83%8E%E3%81%AE%E5%A0%B4%E5%90%88-01.jpg"
+                    alt=""></div>
+        </div>
+        <div class="post">
+            版權所有，視吧設計研究室 ©2021 Copyright。
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {
+        $('a.title').on('click', function(e) {
+            e.preventDefault();
+            var self = this;
+            setTimeout(function() {
+                window.location.href = self.href;
+            }, 1000);
+        });
+    });
+</script>
+
+</html>
